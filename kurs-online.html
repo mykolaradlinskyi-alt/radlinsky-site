@@ -519,7 +519,7 @@
     .cp-day .d{font-family:var(--display);color:var(--brass);font-size:1.15rem}
     .cp-day h4{font-family:var(--display);font-weight:500;font-size:1.2rem}
     .cp-day p{color:var(--ink-soft);margin-top:7px;font-size:.96rem;line-height:1.55}
-    .cp-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+    .cp-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
     .cp-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
     .cp-lect{display:grid;grid-template-columns:.66fr 1.34fr;gap:46px;align-items:center}
     .cp-lect-photo{border-radius:8px;overflow:hidden;border:1px solid var(--line)}
@@ -567,7 +567,13 @@
     .cp-acc-body li{position:relative;padding-left:20px;color:var(--ink-soft);font-size:.97rem}
     .cp-acc-body li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--brass)}
     .cp-prog-note{margin-top:14px;color:var(--ink-soft);font-size:.92rem}
-    @media(max-width:680px){.cp-acc-head{flex-wrap:wrap;gap:4px}.cp-acc-n{flex:0 0 100%}.cp-acc-t{flex:0 0 80%}.cp-acc-body ul{padding-left:20px}}
+    .cp-cycle{font-family:var(--display);font-weight:500;font-size:1.42rem;color:var(--ink);margin-top:46px;line-height:1.28;letter-spacing:-.005em}
+    .cp-cycle:first-of-type{margin-top:22px}
+    .cp-cycle .cn{color:var(--brass);font-style:italic;font-weight:400;margin-right:14px}
+    .cp-extras{list-style:none;margin-top:16px;border-top:1px solid var(--line)}
+    .cp-extras li{display:flex;gap:22px;padding:18px 2px;border-bottom:1px solid var(--line);align-items:baseline;color:var(--ink);font-size:1rem;line-height:1.45}
+    .cp-extra-kind{font-family:var(--display);color:var(--brass);font-size:1.02rem;flex:0 0 230px;line-height:1.3}
+    @media(max-width:680px){.cp-acc-head{flex-wrap:wrap;gap:4px}.cp-acc-n{flex:0 0 100%}.cp-acc-t{flex:0 0 80%}.cp-acc-body ul{padding-left:20px}.cp-extras li{flex-direction:column;gap:4px}.cp-extra-kind{flex:0 0 auto}}
     .legal{padding:48px 0 84px;max-width:760px}
     .legal .upd{font-size:.82rem;color:var(--ink-faint);margin-bottom:8px}
     .legal h2{font-family:var(--display);font-weight:500;font-size:1.45rem;line-height:1.2;margin:38px 0 10px}
@@ -671,70 +677,194 @@
     </div>
   </section>
 
-  <!-- MODULES (accordion) -->
+  <!-- PROGRAM (accordion) -->
   <section class="cp-sec alt">
     <div class="wrap">
       <div class="sec-head ru"><span class="eyebrow">Програма</span><h2>Що всередині курсу</h2></div>
+
+      <h3 class="cp-cycle ru"><span class="cn">Цикл 1</span>Види прямої реставрації зубів</h3>
       <div class="cp-acc ru">
-
         <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 1</span><span class="cp-acc-t">Основи біоміметики</span><span class="cp-acc-ic">+</span></button>
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 1.1</span><span class="cp-acc-t">Види прямої реставрації зубів</span><span class="cp-acc-ic">+</span></button>
           <div class="cp-acc-body"><ul>
-            <li>Лекція: анатомія та біомеханіка зуба</li>
-            <li>Лекція: топографія зубних тканин</li>
-            <li>МК: принципи мінімально-інвазивного підходу</li>
+            <li>Заміна парадигми Блека на парадигму адгезивної реставрації</li>
+            <li>Пряма реставрація зубів у вільному дизайні</li>
+            <li>Три рівня прямої реставрації — три підстави систематизації</li>
+            <li>Параметри видів прямої реставрації</li>
+            <li>Хто та де відновлює зуби і з якою оплатою</li>
           </ul></div>
         </div>
-
         <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 2</span><span class="cp-acc-t">Колір та оптика</span><span class="cp-acc-ic">+</span></button>
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 1.2</span><span class="cp-acc-t">Пломбування як основа прямої реставрації</span><span class="cp-acc-ic">+</span></button>
           <div class="cp-acc-body"><ul>
-            <li>Лекція: колірна конструкція зуба</li>
-            <li>Лекція: прозорість та опалесценція</li>
-            <li>МК: система вибору відтінків</li>
-            <li>МК: пошарова побудова кольору</li>
+            <li>Загальні правила адгезивної техніки відновлення зубів</li>
+            <li>Особливості пломбування зубів у п'яти класах за Блеком</li>
+            <li>Нові види пломбування: тонельне, щілиноподібне і герметизуюче</li>
+            <li>Фінішна обробка відновлених зубів</li>
+            <li>Гарантії, термін служби, прогноз і моніторинг</li>
           </ul></div>
         </div>
-
         <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 3</span><span class="cp-acc-t">Матеріали та адгезія</span><span class="cp-acc-ic">+</span></button>
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 1.3</span><span class="cp-acc-t">Реставрація зубів — розширення показань</span><span class="cp-acc-ic">+</span></button>
           <div class="cp-acc-body"><ul>
-            <li>Лекція: адгезивний протокол</li>
-            <li>Лекція: композити різної опаковості</li>
-            <li>МК: ізоляція робочого поля</li>
+            <li>Біомеханіка зубів і реставрацій</li>
+            <li>Циклічні оклюзійні навантаження і механічна втома</li>
+            <li>Конструкція реставрованого зуба</li>
+            <li>Прямі вініри, коронки, штучні зуби і адгезивні мости</li>
+            <li>Конкуренція між прямою і непрямою реставраціями</li>
           </ul></div>
         </div>
-
         <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 4</span><span class="cp-acc-t">Фронтальна група</span><span class="cp-acc-ic">+</span></button>
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 1.4</span><span class="cp-acc-t">Художня реставрація — авторська стоматологія</span><span class="cp-acc-ic">+</span></button>
           <div class="cp-acc-body"><ul>
-            <li>Лекція: форма й текстура передніх зубів</li>
-            <li>МК: реставрація центрального різця</li>
-            <li>МК: природний перехід та маскування</li>
-            <li>МК: складні клінічні випадки</li>
+            <li>Колір зубів і реставрацій — фізичні основи</li>
+            <li>Біоміметичний підхід для досягнення кольору реставрацій</li>
+            <li>Реконструкція зубів і зубних рядів</li>
+            <li>Трансформація зубів</li>
+            <li>Клас VI за Блеком — усунення стирання зубів</li>
           </ul></div>
         </div>
-
-        <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 5</span><span class="cp-acc-t">Бічна група</span><span class="cp-acc-ic">+</span></button>
-          <div class="cp-acc-body"><ul>
-            <li>Лекція: анатомія жувальних зубів</li>
-            <li>МК: відтворення горбиків і фісур</li>
-            <li>МК: формування контактних пунктів</li>
-            <li>МК: оклюзійна інтеграція</li>
-          </ul></div>
-        </div>
-
-        <div class="cp-acc-item">
-          <button class="cp-acc-head"><span class="cp-acc-n">Модуль 6</span><span class="cp-acc-t">Фініш і довговічність</span><span class="cp-acc-ic">+</span></button>
-          <div class="cp-acc-body"><ul>
-            <li>Лекція: корекція форми та текстурування</li>
-            <li>МК: полірування й фінішна обробка</li>
-            <li>Лекція: прогнозування результату</li>
-          </ul></div>
-        </div>
-
       </div>
+
+      <h3 class="cp-cycle ru"><span class="cn">Цикл 2</span>Вільний дизайн в реставрації передніх і бічних зубів. Відновлення верхніх та нижніх зубів зі стиранням</h3>
+      <div class="cp-acc ru">
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 2.1</span><span class="cp-acc-t">Вільний дизайн в реставрації передніх зубів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Стоматологічне здоров'я як місія стоматолога</li>
+            <li>Конструкція реставрованого зуба як триєдиний комплекс</li>
+            <li>Парадигма Блека — квінтесенція доадгезивної стоматології</li>
+            <li>Парадигма адгезивної стоматології — що тепер можна?</li>
+            <li>Систематизація видів прямої реставрації зубів</li>
+            <li>Препарування зубних тканин у вільному дизайні</li>
+            <li>Оцінка реставрації після завершення і в динаміці</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 2.2</span><span class="cp-acc-t">Вільний дизайн в реставрації бічних зубів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Заміна парадигми Блека на парадигму адгезивної реставрації</li>
+            <li>Нові види діагностики і препарування зубів, оптичне збільшення</li>
+            <li>Біомеханіка зубів і реставрацій, матеріали-імітатори зубних тканин</li>
+            <li>Конструкція реставрованого зуба, алгоритми побудови реставрації</li>
+            <li>Техніка роботи композитами, контроль над склеюванням</li>
+            <li>Моделювання контактних поверхонь, інтеграція в оклюзії</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 2.3</span><span class="cp-acc-t">Відновлення верхніх стертих зубів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Причини і симптомокомплекс стертих зубів</li>
+            <li>Авторський алгоритм системного відновлення зубів</li>
+            <li>Статус 3-х пацієнтів з патологічним стиранням зубів</li>
+            <li>Відновлення верхніх іклів</li>
+            <li>Відновлення верхніх бічних зубів</li>
+            <li>Відновлення верхніх передніх зубів</li>
+            <li>Оклюзія на етапах відновлення верхніх зубів</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 2.4</span><span class="cp-acc-t">Відновлення нижніх стертих зубів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Причини і симптомокомплекс стертих зубів</li>
+            <li>Авторський алгоритм системного відновлення зубів</li>
+            <li>Статус 3-х пацієнтів з патологічним стиранням зубів</li>
+            <li>Відновлення нижніх бічних зубів</li>
+            <li>Відновлення нижніх іклів</li>
+            <li>Відновлення нижніх передніх зубів</li>
+            <li>Оклюзія на етапах відновлення нижніх зубів</li>
+            <li>Моніторинг реставрованих зубів і оклюзії</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <h3 class="cp-cycle ru"><span class="cn">Цикл 3</span>Реконструкція передніх зубів за розрахунком — лекції та майстер-класи з відео-демонстрацією</h3>
+      <div class="cp-acc ru">
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 3.1</span><span class="cp-acc-t">Реконструкція зубів як альтернатива ортодонтії</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Реконструкція в системі видів прямої реставрації зубів</li>
+            <li>Пряма і непряма техніки реконструкції</li>
+            <li>Види і техніка реконструкції зубів і зубних рядів</li>
+            <li>Золота пропорція в естетичній стоматології</li>
+            <li>Стандартні розміри коронок зубів</li>
+            <li>Авторський розрахунок фронтальних секстантів зубних рядів</li>
+            <li>Інструменти контролю і орієнтації</li>
+            <li>Експозиція фронтального секстанту верхнього зубного ряду</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">МК 3.2</span><span class="cp-acc-t">Демонстрація на фантомі: реконструкція верхніх іклів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Експозиція і розрахунок фронтального секстанту</li>
+            <li>Функції і анатомічні особливості верхніх іклів</li>
+            <li>Препарування зубних тканин</li>
+            <li>Алгоритм відновлення іклів</li>
+            <li>Ізоляція робочого поля і адгезивна підготовка</li>
+            <li>Відновлення дентину та емалі</li>
+            <li>Фінішна обробка поверхні композиту</li>
+            <li>Контроль над формою і розміром іклів</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">МК 3.3</span><span class="cp-acc-t">Демонстрація на фантомі: реконструкція верхніх латеральних різців</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Функції і анатомічні особливості верхніх латеральних різців</li>
+            <li>Препарування зубних тканин</li>
+            <li>Алгоритм відновлення різців аномалійної форми</li>
+            <li>Ізоляція робочого поля і адгезивна підготовка</li>
+            <li>Відновлення дентину та емалі</li>
+            <li>Фінішна обробка поверхні композиту</li>
+            <li>Контроль над формою і розміром латеральних різців</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">МК 3.4</span><span class="cp-acc-t">Демонстрація на фантомі: реконструкція верхніх центральних різців</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Функції і анатомічні особливості верхніх центральних різців</li>
+            <li>Препарування зубних тканин під реконструкцію</li>
+            <li>Алгоритм відновлення центральних різців у повороті</li>
+            <li>Ізоляція робочого поля і адгезивна підготовка</li>
+            <li>Відновлення коронок в основному</li>
+            <li>Відновлення контактних поверхонь</li>
+            <li>Фінішна обробка поверхні композиту</li>
+            <li>Контроль над формою і розміром центральних різців</li>
+          </ul></div>
+        </div>
+        <div class="cp-acc-item">
+          <button class="cp-acc-head"><span class="cp-acc-n">Лекція 3.5</span><span class="cp-acc-t">Клінічна практика реконструкції зубів</span><span class="cp-acc-ic">+</span></button>
+          <div class="cp-acc-body"><ul>
+            <li>Демонстрація реконструкції верхнього переднього секстанту, завершеної протягом майстер-класу на фантомі</li>
+            <li>Реконструкція фронтальних секстантів за розрахунком</li>
+            <li>Усунення скупченості передніх зубів</li>
+            <li>Закриття діастеми і трем</li>
+            <li>Реконструкція верхніх передніх зубів</li>
+            <li>Реконструкція нижніх передніх зубів</li>
+            <li>Моніторинг реконструйованих зубів, гарантії і термін служби</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <h3 class="cp-cycle ru">Додаткові лекторії та майстер-класи</h3>
+      <ul class="cp-extras ru">
+        <li><span class="cp-extra-kind">Лекторій</span>«Відновлення перших молярів у ключі оклюзії»</li>
+        <li><span class="cp-extra-kind">Лекторій</span>«Біомеханіка зубів і реставрацій та реставрація вітальних і девітальних зубів»</li>
+        <li><span class="cp-extra-kind">Лекторій</span>«Реставрація зубів з дисколоритом»</li>
+        <li><span class="cp-extra-kind">Лекторій</span>«Композит проти кераміки»</li>
+        <li><span class="cp-extra-kind">Онлайн майстер-клас</span>«Вільний дизайн в реставрації передніх та бічних зубів»</li>
+        <li><span class="cp-extra-kind">Онлайн майстер-клас</span>«Авторська побудова контактних пунктів передніх зубів»</li>
+        <li><span class="cp-extra-kind">Онлайн майстер-клас</span>«Авторська побудова контактних пунктів бічних зубів»</li>
+        <li><span class="cp-extra-kind">Онлайн майстер-клас</span>«Відновлення коронки переднього зуба на корені»</li>
+        <li><span class="cp-extra-kind">Майстер-клас</span>«Реконструкція зруйнованих зубних рядів: усунення діастеми на фантомі»</li>
+        <li><span class="cp-extra-kind">Майстер-клас</span>«Реставрація зруйнованих передніх зубів — покроковий алгоритм»</li>
+        <li><span class="cp-extra-kind">МК на пацієнті</span>«Вільний дизайн в реставрації верхніх центральних різців»</li>
+        <li><span class="cp-extra-kind">Майстер-клас</span>«Реставрація верхніх ікол»</li>
+        <li><span class="cp-extra-kind">Майстер-клас</span>«Закриття трем за розрахунком фронтального секстанта верхнього зубного ряду»</li>
+        <li><span class="cp-extra-kind">МК на фантомі</span>«Реставрація передніх нижніх зубів»</li>
+        <li><span class="cp-extra-kind">МК на пацієнті</span>«Реставрація зруйнованих передніх зубів»</li>
+        <li><span class="cp-extra-kind">МК на пацієнті</span>«Реставрація зруйнованих бокових зубів»</li>
+      </ul>
+
       <div class="cp-prog-cta ru">
         <a href="#" class="btn btn-brass">Купити курс</a>
         <p class="cp-prog-note">Доступ до навчання одразу після оплати</p>
@@ -746,15 +876,13 @@
   <section class="cp-sec">
     <div class="wrap">
       <span class="eyebrow ru">Зі змісту курсу</span>
-      <div class="cp-gallery cp-gallery-8 ru">
-        <img src="images/g1-lecture.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g2-microscope.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g3-demo.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g4-hands.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g5-clinical.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g6-phantom.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g7-front.jpg" alt="" loading="lazy" decoding="async">
-        <img src="images/g8-molar.jpg" alt="" loading="lazy" decoding="async">
+      <div class="cp-gallery ru">
+        <img src="images/g1.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
+        <img src="images/g2.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
+        <img src="images/g3.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
+        <img src="images/g4.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
+        <img src="images/g5.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
+        <img src="images/g6.png" alt="Кадр з онлайн майстер-курсу художньої реставрації зубів" width="740" height="498" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
